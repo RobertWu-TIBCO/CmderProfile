@@ -1,0 +1,194 @@
+ll
+dir
+pwd
+ip
+pwd
+dir
+pwd
+ll
+help
+ipa
+ipa.bat
+ip
+path
+alias
+A
+LS
+ls -l
+ls -l|more
+pwd
+ls -lSh
+pwd
+help
+ipa
+ipa.bat
+ip
+A
+LS
+ls -l|more
+pwd
+ls -lSh
+cd ..
+alias 
+alias ll=ls -l
+ls -lhst
+alias l=ls -lhst
+alias l=ls -l
+alias l=ls
+ls
+l
+alais
+alias
+ls -ol
+ls -l
+ll
+ll.bat
+path
+ls -lSh
+cd ..
+l
+pwd
+ls -lSh
+alias
+ll
+cd ..
+l
+ll
+alias
+cd ..
+l
+l
+alias
+al
+l
+alias
+l
+al
+pwd
+ll
+cd ..
+alias
+l
+ls
+ls -l
+alg ps
+al
+ls -l
+c1
+l
+alg java
+al
+alias
+ls
+ls -l
+c1
+l
+c2
+cd cd
+cd
+cd `
+cd ~
+ls -l
+ls
+c1
+l
+ll
+ls
+cd ..
+ls -l
+l
+ll
+which ll
+where ll
+alg ps
+alias
+which ls
+alg ps
+ls -l
+l
+which ll
+where ll
+alg ps
+alg al
+al|grep alg
+al
+c1
+ll
+ll|grep -i all
+sl|grep -i all
+lsl|grep -i all
+ls|grep -i all
+ls|grep -i all -n
+alg
+alg i
+alias|grep alg
+alg ps
+alg
+alias
+alias|grep al=
+alias|grep al|
+alias|grep alg
+echo %PATH%|grep -i git
+echo %PATH%
+echo %PATH%|grep -i git
+grep --help
+where grep
+alg
+alias
+alias|grep al=
+alias|grep al|
+alias|grep alg
+head -n 1000 R:\OSTmp\Local\Temp\nohup_qa29.out > ./nohup29_head1000.xml
+head -n 10000 R:\OSTmp\Local\Temp\nohup_qa29.out > ./nohup29_head10000.xml
+pwd
+ll
+head -n 20000 R:\OSTmp\Local\Temp\nohup_qa29.out > ./nohup29_head20000.xml
+grep -i null R:\OSTmp\Local\Temp\nohup_qa29.out|grep -i auth
+grep null R:\OSTmp\Local\Temp\nohup_qa29.out|grep auth
+grep --help
+where grep
+which grep
+grep
+echo %PATH%|grep -i git
+pwd
+ll
+grep -i auth nohup29_head1000.xml 
+PATH
+%PATH%
+echo %PATH%
+echo %PATH%|grep -i git
+grep -i git RunZ.stdout.log 
+grep --help 
+ECHO %path%
+ECHO %path%|GREP -I GIT
+echo %PATH%|grep -i git
+where grep
+which grep
+E:\Sort1113OldNote\UseOldDell\reusesoft\sim_linux\Mxt85\bin\grep.exe --help
+echo %PATH%|grep -i git
+E:\Sort1113OldNote\UseOldDell\reusesoft\sim_linux\Mxt85\bin\grep.exe --help
+grep -i auth nohup29_head1000.xml 
+which grep
+where grep
+grep --help
+alias 
+alg grep
+alg grep|grep grep=
+grep auth nohup29_head1000.xml 
+grep.exe -i
+grep.exe --help
+grep.exe --help
+grep auth nohup29_head1000.xml 
+alg alias
+h grep
+al
+pwd
+ll
+ls -l
+ls=ls -lhst --show-control-chars -F --color $*
+alg ls
+alg ls=
+laiss=ls -lhst --show-control-chars -F --color
+alias ls=ls -lhst --show-control-chars -F --color
+ls
+set2

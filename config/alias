@@ -1,0 +1,348 @@
+alias dl='ssh -l root 192.168.69.145'
+alias dd='ssh -l docker 192.168.69.145'
+alias ll='ls -lIhFp'
+alias al='alias'
+alias cdd='cd /d'
+alias cde='cd /e'
+alias w='whoami'
+alias share='cd /D/DockerMatters/share'
+
+#copy from docker vm on Nov 6
+
+alias 'conf=vi /etc/profile'
+
+alias 'rd=rmdir'
+alias 'md=mkdir'
+
+alias 'tail1=tail -n 100'
+
+alias cp='cp -i'
+alias df='df -h'
+alias rm='rm -i'
+alias mv='mv -i'
+alias la='ls -la'
+alias du='du -h'
+
+alias catconf='cat>>/etc/profile'
+
+alias tailn='tail -n'
+alias qq='exit'
+alias etc='cd /etc'
+#need changes!
+alias "dkall=dps|awk '{print $1}'|xargs -n1 docker kill"
+alias share='cd /home/shared'
+alias pad='vi /home/shared/pad'
+alias cdbak='cd /mnt/sda1/backup/name'
+alias rebak2='cp -f /etc/profile /etc/passwd /etc/shadow /etc/fstab /mnt/sda1/backup/name2/'
+alias cpbak='cp -f /mnt/sda1/backup/name/* /etc/'
+alias cpbak2='cp -f /mnt/sda1/backup/name2/* /etc/'
+alias rebak='cp -f /etc/profile /etc/passwd /etc/shadow /etc/fstab /mnt/sda1/backup/name/'
+alias sda='cd /mnt/sda1'
+alias alg='al|grep'
+
+alias dldl='ssh -l root 192.168.1.108'
+alias dldd='ssh -l dockker 192.168.1.108'
+alias jagent='java -agentpath:yjpagent.dll=disablestacktelemetry,disableexceptiontelemetry,builtinprobes=none,delay=10000,sessionname=logcode -XX:-UseSplitVerifier'
+alias sou='source /etc/profile'
+alias jagentlog4j='java -agentpath:yjpagent.dll=disablestacktelemetry,disableexceptiontelemetry,builtinprobes=none,delay=10000,sessionname=logcode -XX:-UseSplitVerifier -Dlog4j.configuration=file:///F:/tibco/bw/5.12/lib/log4j.properties'
+alias tailp='tail /etc/profile'
+alias grep='grep -i'
+
+alias path='echo $PATH'
+alias classpath='echo $CLASSPATH'
+
+alias h='help_fun(){ $@ --help | less ;};help_fun $1'
+alias gp='grepp_fun(){ grep $@ /etc/profile | less ;};grepp_fun $1'
+alias num='funnum_fun(){  echo "$#";};funnum_fun $@'
+# the same using $@ and $1 for {funnum_fun $@}
+alias arg='funnum_fun(){  echo "$@";};funnum_fun $1'
+#use below as sample for alias and function to use args
+
+
+alias cdbt='cd $btracepath'
+alias cdadminbt='cd $btpath'
+alias cdbhome="cd $BTRACE_HOME"
+
+export LC_ALL=zh_CN.GB23122
+export LC_CTYPE=zh_CN.GB2312
+export LANG=zh_CN.GB2312
+export XMODIFIERS="@im=Chinput"3
+#export LESSCHARSET=latin1
+#export LESSCHARSET=GB2312
+export LESSCHARSET=iso8859
+export OUTPUT_CHARSET=iso8859
+#added from G:\SRAll\Experience\ForVm\AllAlias20151205\AliasInGit on 20151207 23:36
+
+alias less='/bin/less -MFRSX'
+alias droot='ssh -l root 192.168.69.145'
+#alias find2='find /!:1 -name /!:2* -type f'
+#alias nohup2="nohup $1 > /dev/null 2>&1 & "
+#alias ssh2="ssh -p $1 -qTfnN -D 7070 $2 "
+#alias "awkp2=awk '{print $2}'"
+alias "dkall2=dps|awk '{print $1}'|xargs -n1 docker kill"
+alias add='(@z=($*);echo $z)'
+alias al='alias'
+alias al2='cat /etc/profile'
+alias alg2='grepp_fun(){ grep $@ /etc/profile | less ;};grepp_fun $1'
+alias alg2='grepp2_fun(){ grep $1 /etc/profile | grep $2 ;};grepp2_fun $1 $2'
+alias alg='al|grep -i -n'
+alias aln='alias|cat -n'
+
+alias alsave2='alias > /home/tibco/Documents/alsave.xml'
+alias amnt='cd /mnt/sda1/var/lib/docker/aufs/mnt'
+alias arg='funnum_fun(){  echo "$@";};funnum_fun $1'
+alias aufs='cd /mnt/sda1/var/lib/docker/aufs'
+alias awkp2='awk '\''{print }'\'''
+alias bakb='\cp -f /mnt/sda1/backup/name/* /mnt/sdb1/conf_bak/'
+alias bakpro2='\cp -f /share/GoodProfile /etc/profile'
+alias bmnt='cd /mnt/sdb1/var/lib/docker/aufs/mnt'
+alias btracehome='cd /g/SysManage/HelpSoft/btrace-bin-1.3.3'
+
+alias c1='cd ..'
+alias c2='cd ../../'
+alias catconf='cat>>/etc/profile'
+alias cathost='cat>>/etc/hosts'
+alias cdadminbt='cd $btpath'
+alias cdbak='cd /mnt/sda1/backup/name'
+alias cdbhome='cd /g/SysManage/HelpSoft/btrace-bin-1.3.3'
+alias cdbt='cd $btracepath'
+alias cdc='cd /c'
+alias cdd='cd /d'
+alias cddocker='cd /var/lib/docker'
+alias cde='cd /e'
+alias cdscript='pushd /share/scripts/bwcript'
+alias cdshare='cd /share'
+alias ce='cd /etc/sysconfig/tcedir'
+alias classpath='echo $CLASSPATH'
+alias cls='clear'
+alias conf2='cat >> /share/GoodProfile'
+alias conf='cat>>/etc/profile'
+alias confm='more /etc/profile'
+alias confv2='vi /share/GoodProfile'
+alias confv='vi /etc/profile'
+alias cp='cp -i'
+alias cpbak2='cp -f /mnt/sda1/backup/name2/* /etc/'
+alias cpbak='cp -f /mnt/sda1/backup/name/* /etc/'
+alias d='dmenu_run &'
+alias dcom2='dcom_func(){ docker commit $1 docker.tibco.com:5002/support/bw:$2;};dcom_func $1 $2'
+alias dcom='docker commit'
+alias dcommit='docker commit'
+alias dd='ssh -l docker 192.168.69.145'
+
+alias df='df -h'
+alias dk='docker kill'
+alias dkall2='dps|awk '\''{print }'\''|xargs -n1 docker kill'
+alias dkall='dps|awk '\''{print }'\''|xargs -n1 docker kill'
+alias dkill='docker kill'
+alias dl='ssh -l root 192.168.69.145'
+alias dldd='ssh -l dockker 192.168.1.108'
+alias dldl='ssh -l root 192.168.1.108'
+alias dm='docker images'
+alias dpl='docker ps -l'
+alias dps='docker ps'
+alias dpsl='docker ps -l'
+alias dpull='docker pull'
+alias dpush='docker push'
+alias drm='docker rm'
+alias drmall2='docker rm `echo $(docker ps -aq)`'
+alias drmall='docker rm '
+alias drmi='docker rmi'
+alias drmiall='docker images -f "dangling=true" -q; docker rmi $(docker images -f "dangling=true" -q)'
+alias drmid='docker rmi $bw'
+alias drmis='docker rmi $bw:$1'
+alias drun9699='docker run -tiP -v /mnt/sda1/share:/share -p 9699:9699'
+alias drun='docker run -tiP -v /mnt/sda1/share:/share'
+alias drunh='docker run -tiP -v /mnt/sda1/share:/share -h'
+alias drunv='docker run -tiP  -v'
+alias dsave='docker save -o'
+alias dtag='docker tag'
+alias du='du -h'
+alias echo2='echo scp /!:1 j'
+alias echo3='echo scp /!^ j '
+alias etc='cd /etc'
+alias find2='findf(){ find $1 -name $2 -type f;};findf $1 $2'
+alias findhere='find . -maxdepth 5 -name'
+alias findroot='find / -maxdepth 5 -name'
+alias forwardrobert='ssh -L 192.168.69.124:8724:192.168.69.145:22 root@192.168.69.145'
+alias free='free -m'
+alias frombak2='\cp -f /mnt/sda1/backup/name2/* /etc/'
+alias frombak='\cp -f /mnt/sda1/backup/name/* /etc/'
+alias gcp2='grep cp /home/tibco/Documents/AllWayInVM/Alias/New0805/0805profile.xml /etc/profile'
+alias gcp='grep cp /home/tibco/Documents/AllWayInVM/Alias/New0805/0805profile.xml'
+alias go='ssh -l root 192.168.59.103'
+alias goal='cd /home/tibco/Documents/AllWayInVM/Alias/New0805/'
+alias gp='grepp_fun(){ grep $@ /etc/profile | less ;};grepp_fun $1'
+alias grepab='grep -i -A 2 -B 2 -n'
+alias grepn='grep -i -n'
+alias grepp='grepp_fun(){ grep $@ /etc/profile | less ;};grepp_fun $1'
+alias greppab='gpnab_fun(){ grep -i -A 2 -B 2 -n $@ /etc/profile;};gpnab_fun $@'
+alias greppn='gpn_fun(){ grep -i -n $@ /etc/profile;};gpn_fun $@'
+alias h='help_fun(){ $@ --help | less ;};help_fun $1'
+alias hl='history'
+alias hlg20='history 20|grep -i'
+alias hlg='history 100|grep -i'
+alias hg='history|grep -i'
+alias hgb='history|grep -i bwengine'
+alias psgb='ps -a|grep -i bwengine'
+alias psg='ps -a|grep -i '
+alias hlgb='history 20|grep -i bwengine'
+alias ip="ipconfig|grep -i '192'"
+alias ipa='ifconfig|grep -i '\''inet addr'\'''
+alias ips='ifconfig'
+alias jagent='java -agentpath:yjpagent.dll=disablestacktelemetry,disableexceptiontelemetry,builtinprobes=none,delay=10000,sessionname=logcode -XX:-UseSplitVerifier'
+alias jagentlog4j='java -agentpath:yjpagent.dll=disablestacktelemetry,disableexceptiontelemetry,builtinprobes=none,delay=10000,sessionname=logcode -XX:-UseSplitVerifier -Dlog4j.configuration=file:///F:/tibco/bw/5.12/lib/log4j.properties'
+alias kill9='kill -9'
+alias l.='ls -d .* --color=auto'
+alias la='ls -la'
+alias ll='ls -lhFp'
+alias lless='ls \!* | less'
+alias ls2='ls -p'
+alias ls='ls -phF --show-control-chars --color=tty'
+alias lslocal='ls -phF --show-control-chars --color=tty'
+alias mconf='more /etc/profile'
+alias md='mkdir -m 777'
+alias mkshare='mkdir /home/shared'
+alias mnta='cd /mnt/sda1/var/lib/docker/aufs/mnt'
+alias mntb='cd /mnt/sdb1/var/lib/docker/aufs/mnt'
+alias mountb='mount /dev/sdb1 /mnt/sdb1'
+alias mv='mv -i'
+alias netfind='netstat -anp|grep -i'
+alias netg='netstat -anp|grep'
+alias num='funnum_fun(){  echo "$#";};funnum_fun $@'
+alias pad='less /mnt/sda1/share/pad'
+alias path='echo $PATH'
+alias pfile='more /etc/profile'
+alias plg='grepp_fun(){ grep $@ /etc/profile | less ;};grepp_fun $1'
+alias portfind='netstat -anp|grep -i'
+alias print2='lpr \!* -Pps5'
+alias print='less \!^ -Pps5'
+alias psg='ps -a|grep -i'
+alias psgb='ps -ef|grep -i bwengine'
+alias qq='exit'
+alias rd='rmdir'
+alias rebak2='cp -f /etc/profile /etc/passwd /etc/shadow /etc/fstab /mnt/sda1/backup/rebak2/'
+alias rebak='cp -f /etc/profile /etc/passwd /etc/shadow /etc/fstab /mnt/sda1/backup/rebak/'
+alias repro2='\cp -f /home/tibco/Documents/AllWayInVM/Alias/New0805/0805profile.xml /etc/profile'
+alias repro='\cp -f /home/tibco/Documents/AllWayInVM/Alias/New0805/0805profile.xml /etc/profile;sr'
+alias rm='rm -i'
+alias sda='cd /mnt/sda1'
+alias sdb='cd /mnt/sdb1'
+alias securityhome='pushd /opt/tibco/tibcojre64/`ls /opt/tibco/tibcojre64`/lib/security'
+alias share22='cd /mnt/sda1/share'
+alias share='cd /share'
+alias sou2='/share/sou.sh'
+alias sou2p='source /share/GoodProfile'
+alias sou='source /etc/profile'
+alias sr='source /etc/profile'
+alias sshp='ssh -l root localhost -p'
+alias ssldebug='cat java.property.TIBCO_SECURITY_VENDOR=j2se  java.property.javax.net.debug=ssl,plaintext,record,handshake >> $1'
+alias su='su -'
+alias tail1='tail -n 100'
+alias tail='tail -n 100'
+alias tailf='tail -200f'
+alias tailn='tail -n'
+alias tailp='tail -200f nohup.out'
+alias taskfind='tasklist|grep -i'
+alias tobak1='\cp -f /mnt/sda1/backup/name/* /mnt/sda1/backup/name2/'
+alias tobak2='\cp -f /etc/profile /etc/passwd /etc/shadow /etc/fstab /mnt/sda1/backup/rebak2/'
+alias tobak='\cp -f /mnt/sda1/backup/name/* /mnt/sda1/backup/name2/;\cp -f /etc/profile /etc/passwd /etc/shadow /etc/fstab /mnt/sda1/backup/name/'
+alias uniq2='uni_f(){ sort $1|uniq -c ;};uni_f $1'
+alias vish='cat ./*.sh'
+alias vpnrobert='vpn_f(){ ssh -L 192.168.69.124:$2:192.168.69.145:$1 root@192.168.69.145;};vpn_f $1 $2'
+alias w='whoami'
+alias which='alias | /usr/bin/which --tty-only --read-alias --show-dot --show-tilde'
+alias wl='wc -l'
+alias xsel2=' xsel_func(){ $1 | xsel -b;}; xsel_func $1'
+alias zhouchun2='function __zhouchun(){echo "scp $* j"; unset -f __zhouchun; }; __zhouchun'
+alias zhouchun='echo scp $1 j '
+alias ahkg='ahkg_fun(){ grep $@ "/f/Program Files/AutoHotkey/Scripts/Good/gmailFireCloverPad_simple.ahk";};ahkg_fun $@'
+alias bakp='\cp /etc/profile /g/SRAll/Experience/ForVm/OnlyProfileAliasAfter20151219Sort/profileOnlyGit'
+alias des12="cd 'F:\tibco\designer\5.9\bin'"
+alias des13="cd 'F:\tibco513\designer\5.10\bin'"
+alias tra="vi 'F:\tibco\designer\5.9\bin\designer.tra'"
+alias tra13="vi 'F:\tibco513\designer\5.10\bin\designer.tra'"
+alias javasecurity13="vi 'E:\tibco513\tibcojre64\1.8.0\lib\security\java.security'"
+alias javasecurity="vi 'F:\tibco\tibcojre64\1.7.0\lib\security\java.security'"
+alias bwtra13="vi 'E:\tibco513\bw\5.13\bin\bwengine.tra'"
+alias bwtra="vi 'F:\tibco\bw\5.12\bin\bwengine.tra'"
+alias prop="vi 'F:\tibco\designer\5.9\SortProp\onlySOAPTrace.cfg'"
+alias props="pushd 'F:\tibco\designer\5.9\SortProp'"
+alias desi="des12;./designer &"
+alias fire1="'F:\Program Files\Mozilla Firefox\firefox.exe' support.tibco.com"
+alias fire="fire1 &"
+alias fiddler="'F:\Program Files\Fiddler\Fiddler.exe'"
+alias fid="fiddler &"
+
+alias profile="'F:\Program Files\Notepad++\notepad++.exe' /etc/profile"
+alias diffp='diff /g/SRAll/Experience/ForVm/Best20151207/bakprofile /etc/profile'
+alias pad="'F:\Program Files\Notepad++\notepad++.exe'"
+alias s="'F:\Program Files\Everything\Everything.exe' -s "
+alias cmd="'C:\Windows\SysWOW64\cmd.exe'"
+alias vimp="vi 'C:\Users\robert\_vimperatorrc'"
+alias vimpg='vimpg_fun(){ grep $@ "C:\Users\robert\_vimperatorrc";};vimpg_fun $@'
+alias bashg='bashg_fun(){ grep $@ "G:\SRAll\ToAttach\GoodLearn\BashGood\BashShortcutAltN.xml";};bashg_fun $@'
+alias learng='learn_fun(){ grep $@ "G:\SRAll\ToAttach\GoodLearn\BashGood\1122GoodDayLearn.xml";};learn_fun $@'
+alias padg='padns_fun(){ grep $@ "G:\SRAll\Experience\GoodEmail\PadAllBeforeNS.txt";};padns_fun $@'
+alias diffp2="diff /etc/profile 'G:\SRAll\Experience\ForVm\Best20151207\BestGitProfile20151207' "
+# fails to make it work 
+#alias mqssl='pushd "G:\SRAll";cmd;java -Djavax.net.debug=ssl -cp "%CLASSPATH%";"G:/SRAll/ToAttach/SRHelps/Sr/collect/mq_lib/fscontext.jar;G:/SRAll/ToAttach/SRHelps/Sr/collect/mq_lib/*.jar;G:/SRAll/ToAttach/SRHelps/Sr/collect/mq_lib/com.ibm.mq.jar" Requester'
+alias opensslgetcert='openssl s_client -connect tibcomc.webex.com:443 -showcerts -prexit -msg'
+alias opensslc='sslclient(){ openssl s_client -connect $1:$2 -showcerts -prexit ;};sslclient $1'
+alias padbash=" pad 'G:\SRAll\ToAttach\GoodLearn\BashGood\BashShortcutAltN.xml'"
+alias lbash=" less 'G:\SRAll\ToAttach\GoodLearn\BashGood\BashShortcutAltN.xml'"
+alias vbash=" vi 'G:\SRAll\ToAttach\GoodLearn\BashGood\BashShortcutAltN.xml'"
+alias "pkall=ps|awk '{print $1}'|xargs -n1 kill -9"
+# see that the vi could check files which has Chinese content
+alias host="sed -n '/xpvm/p' 'C:\Windows\System32\drivers\etc\hosts'"
+alias hostc="cat 'C:\Windows\System32\drivers\etc\hosts'"
+alias hostsedshow="host|sed 's/100/109/g'"
+alias hostsed2="sed -i '/xpvm/s/100/109/g' 'C:\Windows\System32\drivers\etc\hosts'"
+alias hostsedi="hostsed(){ sed -i '/xpvm/s/\$1/\$2/g' 'C:\Windows\System32\drivers\etc\hosts';}hostsed $1 $2"
+alias sedreplace="sedreplace(){ sed 's/\$1/\$2/g' $3;}sedreplace $1 $2 $3"
+alias sedn="sedn(){ sed -n '/\$1/p' $2;}sedn $1 $2"
+alias seddel="seddel(){ sed -i '/\$1/d' $2;}seddel $1 $2"
+hosts='C:\Windows\System32\drivers\etc\hosts'
+host=/c/Windows/System32/drivers/etc/hosts
+alias j2se="find . -name '*' -maxdepth 1 -exec grep -Hi 'j2se' {} \;"
+alias ssl="find . -name '*' -maxdepth 1 -exec grep -Hi 'ssl' {} \;"
+#alias findd1="findd1(){ find . -name '$1' -maxdepth 1 |xargs grep -Hi '$2' ;};findd1 $1 $2"
+#find . -maxdepth 1 -name '*' |xargs grep -Hi j2se
+alias aix='ssh -l adadb 192.168.65.57'
+#/adapter/adsap/jre170051/source/bin  ibm jvm
+alias propg='allprop(){ grep $@ "F:\tibco\designer\5.9\SortProp\WrongSort.cfg" | less ;};allprop $@'
+alias vibash="set -o vi"
+alias embash="set -o emacs"
+alias set2='set|less'
+alias xvimp='pad "X:\Users\yawu\_vimperatorrc"'
+alias bwbin='cd /opt/tibco/bw/`ls /opt/tibco/bw`/bin'
+alias desbin='cd /opt/tibco/designer/`ls /opt/tibco/designer`/bin'
+alias bwhome='cd /opt/tibco/bw/`ls /opt/tibco/bw`/bin'
+alias deshome='cd /opt/tibco/designer/`ls /opt/tibco/designer`/bin'
+#alias deshome='cd /opt/tibco/designer'
+#alias bwhome='cd /opt/tibco/bw'
+alias bwtra='vi /opt/tibco/bw/`ls /opt/tibco/bw`/bin/bwengine.tra'
+alias tra='vi /opt/tibco/designer/`ls /opt/tibco/designer`/bin/designer.tra'
+alias des='cd /opt/tibco/designer/`ls /opt/tibco/designer`/bin;./designer &'
+alias sync2='echo 3 > /proc/sys/vm/drop_caches'
+alias l='ll'
+alias cdapp='cd /opt/tibco/tra/domain/$(ls /opt/tibco/tra/domain/)/application/'
+alias sr='source /etc/profile'
+alias alsave='alias > /g/SRAll/Experience/ForVm/OnlyProfileAliasAfter20151219Sort/alsave.xml'
+#alias bakp='\cp /etc/profile /g/SRAll/Experience/ForVm/OnlyProfileAliasAfter20151219Sort/profileOnlyGit'
+alias upal='echo "###will append contents from alsave.xml">> /etc/profile;cat /g/SRAll/Experience/ForVm/OnlyProfileAliasAfter20151219Sort/alsave.xml >> /etc/profile'
+alias upal2='echo "###will append contents from output of al command">> /etc/profile;al >> /etc/profile'
+alias redhat='ssh 192.168.72.223'
+alias root223='ssh 192.168.72.223 -l root'
+alias 254='ssh 192.168.72.254'
+alias curltls1='curl https://ssltest39.ssl.symclab.com/ -l -v'
+alias curlssl3='curl https://ssltest39.ssl.symclab.com/ -3 -v'
+alias curltls1.1='curl https://tls1test.salesforce.com/s/ -l -v'
+#lsof -i :8080
+#netstat -tln|grep 8080
+alias algg='algg_func(){ alg $1|grep $2;};algg_func $1 $2'
+#alias propg='allprop(){ grep $@ "F:\tibco\designer\5.9\SortProp\WrongSort.cfg" | less ;};allprop $@'
+alias gpg2='greppg_fun(){ grep $1 /etc/profile|grep $2; };greppg_fun $1 $2'
+alias unal='unalias '
+# paste -d "\n" index  path >goodpasten.txt  
+#E:\Sort1113OldNote\UseOldDell\reusesoft\sim_linux\cygwin\tmp\testpaste\goodpasten.txt
+alias netlist='netstat -anp|grep 0:'
