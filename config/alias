@@ -346,3 +346,4 @@ alias unal='unalias '
 # paste -d "\n" index  path >goodpasten.txt  
 #E:\Sort1113OldNote\UseOldDell\reusesoft\sim_linux\cygwin\tmp\testpaste\goodpasten.txt
 alias netlist='netstat -anp|grep 0:'
+alias exclude='notepad ./git/info/exclude'
